@@ -1,15 +1,16 @@
 interface CounterHighlightProps {
   labelNumber: string | number;
-  content: string;
+  children: ReactNode;
 }
 
+import { ReactNode } from 'react'
 import styles from './styles.module.scss'
 
-export function CounterHighlight({ content, labelNumber }: CounterHighlightProps) {
+export function CounterHighlight({ children, labelNumber }: CounterHighlightProps) {
   return (
     <div className={styles.container}>
       <h3>{labelNumber}</h3>
-      <p>{content}</p>
+      <p>{children}</p>
     </div>
   )
 }

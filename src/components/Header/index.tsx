@@ -92,29 +92,33 @@ export function Header()  {
               <nav className={styles.navigation}>
                 <ul>
                   <MenuLink
-                    href="#"
+                    href="#home"
                     handleClick={handleClickOnLink}
                     labelForTitle="Levando quem precisa ao espaço"
-                    label="Início"
-                  />
+                  >
+                    Início
+                  </MenuLink>
                   <MenuLink
                     href="#project"
                     handleClick={handleClickOnLink}
                     labelForTitle="Base de lançamento"
-                    label="O projeto"
-                  />
+                  >
+                    O projeto
+                  </MenuLink>
                   <MenuLink
                     href="#participate"
                     handleClick={handleClickOnLink}
                     labelForTitle="Seleção de astronautas"
-                    label="Como participar"
-                  />
+                  >
+                    Como participar
+                  </MenuLink>
                   <MenuLink
                     href="#courses"
                     handleClick={handleClickOnLink}
                     labelForTitle="Olhando para o espaço"
-                    label="Cursos"
-                  />
+                  >
+                    Cursos
+                  </MenuLink>
                 </ul>
               </nav>
               <button type="button">
@@ -148,29 +152,33 @@ export function Header()  {
           <nav className={styles.mobileMenu}>
             <ul>
               <MenuLink
-                href="#"
+                href="#home"
                 handleClick={handleClickOnLink}
                 labelForTitle="Levando quem precisa ao espaço"
-                label="Início"
-              />
+              >
+                Início
+              </MenuLink>
               <MenuLink
                 href="#project"
                 handleClick={handleClickOnLink}
                 labelForTitle="Base de lançamento"
-                label="O projeto"
-              />
+              >
+                O projeto
+              </MenuLink>
               <MenuLink
                 href="#participate"
                 handleClick={handleClickOnLink}
                 labelForTitle="Seleção de astronautas"
-                label="Como participar"
-              />
+              >
+                Como participar
+              </MenuLink>
               <MenuLink
                 href="#courses"
                 handleClick={handleClickOnLink}
                 labelForTitle="Olhando para o espaço"
-                label="Cursos"
-              />
+              >
+                Cursos
+              </MenuLink>
             </ul>
           </nav>
         ) }

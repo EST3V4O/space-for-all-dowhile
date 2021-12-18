@@ -11,7 +11,7 @@ export function Footer() {
           <p>©2021 Space ForAll</p>
           <p>Todos os direitos reservados</p>
         </section>
-        <Link href="#">
+        <Link href="#home">
           <a>
             <img src="/images/arrow-up.svg" alt="Voltar ao topo" />
           </a>

@@ -57,7 +57,6 @@
   }
 }
 
-
 button.mobile {
   border: none;
   background: none;
@@ -76,7 +75,11 @@ button.mobile {
       font-size: 1.5rem;
       font-weight: bold;
       padding: 1rem 0;
-      border-bottom: 1px solid var(--divider);
+      
+
+      & + li { 
+        border-top: 1px solid var(--divider);
+      }
 
       a {
         transition: color 0.2s;

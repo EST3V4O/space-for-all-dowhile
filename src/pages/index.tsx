@@ -13,14 +13,16 @@ import { Footer } from '../components/Footer'
 export default function Home() {
 
   const igniteIncludes = ["Backend", "Frontend", "Mobile", "Métodos Ágeis"]
+  const dataScienceIncludes = ["Banco de dados", "Machine Learning", "Ciência de dados", "Métodos Ágeis"]
+  const designIncludes = ["UI", "UX", "Photoshop", "Métodos Ágeis"]
 
   return (
     <>
       <Header />
 
       <main className={styles.mainContent}>
-        <section className={styles.home} id='#'>
-          <img src="/images/fundo.png" alt="Fundo tetra" />
+        <section className={styles.home} id='home'>
+          <img src="/images/fundo.png" alt="Fundo Home" />
           <section>
             <img src="/images/planets.svg" alt="Planeta" />
             <div className={styles.homeContent}>
@@ -38,55 +40,51 @@ export default function Home() {
             <img src="/images/rocket.svg" alt="Planeta" />
           </section>
         </section>
+
         <div className={styles.divider} />
+
         <section className={`${styles.container} ${styles.launchBase}`} id="project">
           <div>
             <h2>Base de lançamento</h2>
             <p>
-              O projeto tem como proposta patrocinar o conhecimento para pessoas
-              carentes disponibilizando acesso a conteúdos pagos de qualidade
-              focado no mercado de trabalho e oferecidos por empresas de auto
-              renome. Utilizando do Modelo de Sucesso Compartilhado, que consiste
-              no indivíduo pagar pela formação apenas quando estiver trabalhando
-              e recebendo uma remuneração mínima. Assim o aluno, após a conclusão
-              do curso, será direcionado a empresas parceiras, onde sendo contratado,
-              poderá pagar pelo conteúdo sustentando o projeto.
+              O projeto é uma <strong>causa social</strong> que patrocina o conhecimento e evolução de pessoas carentes por meio do  <strong>Modelo de Sucesso Compartilhado</strong>, disponibilizando acesso a <strong>formações de qualidade</strong> oferecidas por empresas comprometidas com a educação. 
+              Com a sua formação garantida <strong>as melhores oportunidades no mercado de trabalho são abertas</strong> e nós te acompanhamos por todo o processo na busca de emprego contando com <strong>a ajuda de empresas parceiras.</strong>
             </p>
           </div>
           <div className={styles.highlights}>
             <CounterHighlight
               labelNumber={1}
-              content="O aluno não paga nada enquanto não possuir uma remuneração
-              mínima de R$ 3.000,00 por mês."
-            />
+            >
+              Você não paga nada enquanto não possuir uma <strong>remuneração mínima de R$ 3.000,00 por mês.</strong>
+            </CounterHighlight>
             <div>
               <CounterHighlight
                 labelNumber={2}
-                content="A partir do momento que é atingido essa remuneração mínima, o
-                aluno passará a pagar mensalmente uma porcentagem, relativa ao
-                curso, da sua remuneração."
-              />
+              >
+                Conquistando a remuneração mínima, <strong>você passará a pagar mensalmente uma parcela negociável, </strong> relativa ao curso.
+              </CounterHighlight>
               <CounterHighlight
                 labelNumber={3}
-                content="Caso o aluno pare de trabalhar ou tenha a renda abaixo do mínimo,
-                o pagamento é suspenso. Demonstrando o comprometimento que temos
-                com o sucesso das pessoas que confiam no projeto."
-              />
+              >
+                Caso pare de trabalhar ou tenha a renda abaixo do mínimo, <strong>o pagamento é suspenso</strong> e nos comprometemos em lhe dar apoio.
+              </CounterHighlight>
             </div>
             <img src="/images/launch-base.svg" alt="Base de lançamento" />
           </div>
         </section>
+
         <div className={styles.divider} />
+
         <section className={`${styles.container} ${styles.selectAstronaut}`} id="participate">
           <div>
             <div>
               <h2>Seleção de astronautas</h2>
               <p>
                 A seleção dos alunos será feita com base em seu perfil, priorizando
-                os que moram no Brasil e em situação de pobreza.
+                os que <strong>moram no Brasil</strong> e em <strong>situação de pobreza.</strong>
               </p>
               <p>
-                Não é necessário ter qualquer conhecimento prévio para se inscrever,
+                <strong>Não é necessário ter qualquer conhecimento prévio</strong> para se inscrever,
                 apenas cumprir os critérios abaixo:
               </p>
             </div>
@@ -119,7 +117,9 @@ export default function Home() {
             />
           </div>
         </section>
+
         <div className={styles.divider} />
+
         <section className={`${styles.container} ${styles.lookingSpace}`} id="courses">
           <div>
             <img src="/images/stars.svg" alt="Estrelas" />
@@ -128,37 +128,39 @@ export default function Home() {
               <section>
                 <h2>Olhando para o espaço</h2>
                 <p>
-                  Escolha entre cursos de diferentes áreas com formações completas
-                  <br />com foco no mercado de trabalho.
+                  Escolha entre cursos de diferentes áreas <strong>com formações completas
+                  <br />com foco no mercado de trabalho.</strong>
                 </p>
               </section>
             </div>
           </div>
           <section>
             <CourseCard
-              altIcon='Ignite'
+              nameOfCourse='Ignite'
               company='Rocketseat'
               iconPath='ignite.svg'
+              altIcon='Ignite'
               includeOnCourse={igniteIncludes}
-              nameOfCourse='Ignite'
             />
             <CourseCard
-              altIcon='Ignite'
-              company='Rocketseat'
-              iconPath='ignite.svg'
-              includeOnCourse={igniteIncludes}
-              nameOfCourse='Ignite'
+              nameOfCourse='Data Science'
+              altIcon='Data Science'
+              iconPath='data-science.svg'
+              company='Alura'
+              includeOnCourse={dataScienceIncludes}
             />
             <CourseCard
-              altIcon='Ignite'
-              company='Rocketseat'
-              iconPath='ignite.svg'
-              includeOnCourse={igniteIncludes}
-              nameOfCourse='Ignite'
+              nameOfCourse='Design'
+              company='Digital House'
+              iconPath='design.svg'
+              altIcon='Design'
+              includeOnCourse={designIncludes}
             />
           </section>
         </section>
+
         <div className={styles.divider} />
+
         <section className={`${styles.container} ${styles.buildingRocket}`}>
           <img src="/images/building-rocket.svg" alt="Construindo foguetes" />
           <div>
@@ -172,6 +174,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <Footer />
       </main>
     </>
