@@ -1,0 +1,19 @@
+.container {
+  color: var(--gray-500);
+  font-weight: 400;
+  font-size: 1.125rem;
+
+  a {
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--text-200);
+    }
+  }
+}
+
+.active {
+  a {
+    color: var(--text-100);
+  }
+}

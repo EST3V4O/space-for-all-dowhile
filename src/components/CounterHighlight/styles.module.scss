@@ -1,0 +1,17 @@
+.container {
+  max-width: 400px;
+  padding: 0 1rem;
+
+  h3 {
+    font-size: 6.25rem;
+    background: var(--highlights-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    margin-top: -1rem;
+    color: var(--text-200);
+    font-size: 1.125rem;
+  }
+}
