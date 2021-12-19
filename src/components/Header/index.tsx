@@ -20,6 +20,15 @@ export function Header()  {
     }
   }
 
+  function toggleActiveMobileMenu() {
+    setActiveMobileMenu(!activeMobileMenu)
+    if(!activeMobileMenu) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "visible"
+    }
+  }
+
   useEffect(() => {
     window.onload = () => {
       if(window.innerWidth <= 768) {
@@ -129,7 +138,7 @@ export function Header()  {
             <button
               className={styles.mobile}
               type="button"
-              onClick={() => setActiveMobileMenu(!activeMobileMenu)}
+              onClick={toggleActiveMobileMenu}
             >
               <Image src="/images/hamburger-mobile.svg" alt="Abrir menu" width={35} height={40} />
             </button>
@@ -139,7 +148,7 @@ export function Header()  {
             <button
               className={styles.mobile}
               type="button"
-              onClick={() => setActiveMobileMenu(!activeMobileMenu)}
+              onClick={toggleActiveMobileMenu}
             >
               <Image src="/images/close.svg" alt="Fechar menu" width={25} height={20} />
             </button>

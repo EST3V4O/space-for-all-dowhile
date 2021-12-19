@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { ReactNode, useCallback, useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 import styles from './styles.module.scss'
 
@@ -14,10 +13,6 @@ interface MenuLinkProps {
 export function MenuLink({ handleClick, href, children, labelForTitle }: MenuLinkProps) {
   const [active, setActive] = useState(false)
 
-  const handleLinkActive = useCallback(() => {
-    handleClick(labelForTitle)
-  }, [handleClick, labelForTitle])
-
   useEffect(() => {
     const link = href.split("#")[1]
     const unregister = () =>  {
@@ -26,20 +21,21 @@ export function MenuLink({ handleClick, href, children, labelForTitle }: MenuLin
       const discountMenu = offsetTop - 85
       const elementHeightScroll = discountMenu + scrollHeight
 
-      if(window.scrollY >= discountMenu && window.scrollY <= elementHeightScroll) {
-        if(!active) {
-          setActive(true)
-          handleLinkActive()
+      if(window.innerHeight > 768) {
+        if(window.scrollY >= discountMenu && window.scrollY <= elementHeightScroll) {
+          if(!active) {
+            setActive(true)
+            handleClick(labelForTitle)
+          }
+        } else {
+          setActive(false)
         }
-      } else {
-        setActive(false)
       }
-
     }
     window.addEventListener("scroll", unregister)
 
     return () => window.removeEventListener("scroll", unregister)
-  }, [href, active, handleLinkActive])
+  }, [href, active, labelForTitle, handleClick])
 
   useEffect(() => {
     if(!window.location.href.includes("#") && href === "#home") {
