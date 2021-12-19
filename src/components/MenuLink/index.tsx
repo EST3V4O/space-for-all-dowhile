@@ -21,7 +21,7 @@ export function MenuLink({ handleClick, href, children, labelForTitle }: MenuLin
       const discountMenu = offsetTop - 85
       const elementHeightScroll = discountMenu + scrollHeight
 
-      if(window.innerHeight > 768) {
+      if(window.innerWidth > 768) {
         if(window.scrollY >= discountMenu && window.scrollY <= elementHeightScroll) {
           if(!active) {
             setActive(true)
