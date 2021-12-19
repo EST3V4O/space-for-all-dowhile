@@ -15,6 +15,8 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
           <link rel="shortcut icon" href="favicon.png" type="image/png" />
+
+          <meta name="description" content="Em parceria com empresas de educação oferecemos cursos pagos com formações de grande empregabilidade para pessoas carentes, começando a pagar apenas quando estiver trabalhando." />
         </Head>
         <body>
           <Main />
