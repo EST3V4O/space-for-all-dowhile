@@ -20,8 +20,8 @@
   O desafio consistia em desenvolver uma aplicação estilo Landing Page, utilizando uma das tecnologias apresentadas e com o tema abaixo: 
 
   ```
-    "Pensando em construir o futuro, como você solucionaria os problemas
-    de acesso à educação hoje, utilizando a tecnologia?"
+    Pensando em construir o futuro, como você solucionaria os problemas
+    de acesso à educação hoje, utilizando a tecnologia?
   ```
   Para melhor entendimento do desafio em si acesse: <a href="https://efficient-sloth-d85.notion.site/Instru-es-dos-desafios-f2f2c5574cf640c59de425413f60c8eb?p=f155a3fc310744b9b57557f7485c8153">Desafio - DoWhile2021</a> <br />
 
@@ -36,7 +36,7 @@
 
 ## :art: Layout
 
-<p>
+<p id="layout">
   Utilizamos para criação do layout o <a href="https://www.figma.com/">Figma</a>. Você pode visualizar através <a href="https://www.figma.com/file/WuMojlB5b02R0qOU1tNObQ/Space-ForAll?node-id=98%3A5">desse link<a/>. Lembrando que você precisa ter uma conta no Figma para acessá-lo.
 </p>
 
