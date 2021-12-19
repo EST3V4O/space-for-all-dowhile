@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image'
 import { CounterHighlight } from '../components/CounterHighlight'
 
 import { Header } from '../components/Header'
@@ -22,7 +21,7 @@ export default function Home() {
 
       <main className={styles.mainContent}>
         <section className={styles.home} id='home'>
-          <img src="/images/fundo.png" alt="Fundo Home" />
+          <img src="/images/fundo.png" alt="Fundo do início" />
           <section>
             <img src="/images/planets.svg" alt="Planeta" />
             <div className={styles.homeContent}>

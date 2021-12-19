@@ -1,9 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { MenuLink } from '../MenuLink'
 
@@ -83,7 +81,7 @@ export function Header()  {
         <section>
           <Link href="#">
             <a>
-              <img src="/images/logo.svg" alt="Space ForAll" />
+              <Image src="/images/logo.svg" alt="Space ForAll" width="100%" height="100%" />
             </a>
           </Link>
 
@@ -133,7 +131,7 @@ export function Header()  {
               type="button"
               onClick={() => setActiveMobileMenu(!activeMobileMenu)}
             >
-              <img src="/images/hamburger-mobile.svg" alt="Hamburger" />
+              <Image src="/images/hamburger-mobile.svg" alt="Abrir menu" width={35} height={40} />
             </button>
           )}
 
@@ -143,7 +141,7 @@ export function Header()  {
               type="button"
               onClick={() => setActiveMobileMenu(!activeMobileMenu)}
             >
-              <img src="/images/close.svg" alt="Fechar" />
+              <Image src="/images/close.svg" alt="Fechar menu" width={25} height={20} />
             </button>
           ) }          
         </section>
