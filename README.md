@@ -6,7 +6,7 @@
   <a href="#dowhile-challenge">Desafio</a>&nbsp; · &nbsp;
   <a href="#project">Projeto</a>&nbsp; · &nbsp;
   <a href="#layout">Layout</a>&nbsp; · &nbsp;
-  <a href="#technologies">Tecnologia</a>
+  <a href="#technologies">Tecnologias</a>
 </p>
 
 <div>
@@ -17,7 +17,7 @@
 
 <p id="dowhile-challenge">
   Desafio proposto no evento do <a href="https://dowhile.io/">DoWhile</a> pelo pessoal da <a href="https://rocketseat.com.br/">Rocketseat</a> para o programa de bolsas patrocinado pelas empresas parceiras. <br />
-  O desafio consistia em desenvolver uma aplicação estilo Landing Page, utilizando uma das tecnologias apresentadas e com o tema abaixo: 
+  O desafio consistia em desenvolver uma aplicação estilo <strong>Landing Page</strong>, utilizando uma das tecnologias apresentadas e com o tema abaixo: 
 
   ```
     Pensando em construir o futuro, como você solucionaria os problemas
@@ -25,7 +25,7 @@
   ```
   Para melhor entendimento do desafio em si acesse: <a href="https://efficient-sloth-d85.notion.site/Instru-es-dos-desafios-f2f2c5574cf640c59de425413f60c8eb?p=f155a3fc310744b9b57557f7485c8153">Desafio - DoWhile2021</a> <br />
 
-  :warning: Um ponto a se destacar é que a ideia deste projeto não foi de minha autoria, dando os créditos ao <a href="https://github.com/onerBreno">Breno Dias</a>, com quem tive a a oportunidade de ajudar na criação do layout, onde cada um desenvolveu essa mesma aplicação utilizando tecnologias diferentes e mudando alguns aspectos visuais.
+  :warning: Um ponto a se destacar é que a ideia deste projeto não foi de minha autoria, dando os créditos ao <a href="https://github.com/onerBreno">Breno Dias</a>, com quem tive a oportunidade de ajudar na criação do layout, onde cada um desenvolveu essa mesma aplicação utilizando tecnologias diferentes e mudando alguns aspectos visuais.
 </p>
 
 ## :bulb: Uma ideia
@@ -46,5 +46,6 @@
 
 - [ReactJS](https://pt-br.reactjs.org/)
 - [NextJS](https://nextjs.org/)
+- [TypeScript ](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
 
